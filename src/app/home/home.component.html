@@ -1,1 +1,7 @@
-<h2>Welcome to my Life</h2>
+<h2>Welcome to my Life {{headername | uppercase}}</h2>
+
+<p>{{salary | percent}}</p>
+<br>
+<button (click)="Functionclick('Buje Singian')">Click Me!</button>
+<br>
+<input #txt (change)="Functionclick(txt.value)">
