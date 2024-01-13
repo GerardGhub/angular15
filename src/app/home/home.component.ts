@@ -15,10 +15,14 @@ export class HomeComponent implements OnInit {
 
   headername = "Angular bakla"
 
-  salary = 0.45;
+  salary = 0.55;
   isdisabled = true;
   colorname="red";
   font='40px';
+  classname='headclass';
+  stylevalue={"color":"green","font-size":"30px"}
+
+  colors=['green','red','yellow','pink','violet']
 
 
   Functionclick(name: string) {

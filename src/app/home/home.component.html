@@ -1,11 +1,18 @@
-<h2 [style.color]="colorname" [style.font-size]="font">Angular 15 {{headername | uppercase}}</h2>
+<h2 [ngClass]="classname">Angular 15 {{headername | uppercase}}</h2>
 
-<p [style.font-size]="font">My Salary is {{salary | percent}}</p>
+<p *ngIf="salary > 0" [ngStyle]="stylevalue">My Salary is {{salary | percent}}</p>
 <br>
 
 <button (click)="Functionclick('Buje Singian')">Click Me!</button>
 <br>
+<br>
 <input [value]="isdisabled" [disabled]="isdisabled" #txt (change)="Functionclick(txt.value)">
-
+<br>
 <br>
 <input [(ngModel)]="headername">
+
+<ul>
+    <li *ngFor="let item of colors">
+    {{item}}
+    </li>
+</ul>
