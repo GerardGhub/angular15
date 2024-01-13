@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
 
@@ -16,10 +16,12 @@ export class HomeComponent implements OnInit {
   headername = "Angular bakla"
 
   salary = 0.45;
- isdisabled=true;
- 
+  isdisabled = true;
+  colorname="red";
+  font='40px';
 
-  Functionclick(name:string) {
+
+  Functionclick(name: string) {
     alert(name);
   }
 

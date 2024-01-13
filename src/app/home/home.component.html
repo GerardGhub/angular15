@@ -1,6 +1,6 @@
-<h2>Angular 15 {{headername | uppercase}}</h2>
+<h2 [style.color]="colorname" [style.font-size]="font">Angular 15 {{headername | uppercase}}</h2>
 
-<p>{{salary | percent}}</p>
+<p [style.font-size]="font">My Salary is {{salary | percent}}</p>
 <br>
 
 <button (click)="Functionclick('Buje Singian')">Click Me!</button>
