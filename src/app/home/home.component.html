@@ -4,4 +4,4 @@
 <br>
 <button (click)="Functionclick('Buje Singian')">Click Me!</button>
 <br>
-<input #txt (change)="Functionclick(txt.value)">
+<input [value]="isdisabled" [disabled]="isdisabled" #txt (change)="Functionclick(txt.value)">

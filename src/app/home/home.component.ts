@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   headername = "Angular bakla"
 
   salary = 0.45;
-
+ isdisabled=true;
  
 
   Functionclick(name:string) {
