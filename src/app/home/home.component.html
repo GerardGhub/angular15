@@ -1,7 +1,11 @@
-<h2>Welcome to my Life {{headername | uppercase}}</h2>
+<h2>Angular 15 {{headername | uppercase}}</h2>
 
 <p>{{salary | percent}}</p>
 <br>
+
 <button (click)="Functionclick('Buje Singian')">Click Me!</button>
 <br>
 <input [value]="isdisabled" [disabled]="isdisabled" #txt (change)="Functionclick(txt.value)">
+
+<br>
+<input [(ngModel)]="headername">

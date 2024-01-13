@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { StatusComponent } from './status/status.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -23,6 +24,7 @@ import { AddContactComponent } from './add-contact/add-contact.component';
     imports: [
         BrowserModule,
         AppRoutingModule,
+        FormsModule
         // AccessRoutingModule
     ]
 })
