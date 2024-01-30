@@ -35,6 +35,7 @@ export class LoginComponent implements OnInit {
         this.resdata = item;
         if (this.resdata != null) {
           localStorage.setItem('token', this.resdata.jwtToken);
+          this.route.navigate(['home']);
         } else {
           alert("Login Failed!");
         }
@@ -44,5 +45,11 @@ export class LoginComponent implements OnInit {
     }
 
   }
+
+
+  RedirectRegister() {
+    this.route.navigate(['access/register']);
+  }
+
 
 }

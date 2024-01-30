@@ -14,4 +14,17 @@ export class UserService {
   ProceedLogin(inputdata:any) {
     return this.http.post('https://localhost:44308/User/Authenticate', inputdata);
   }
+
+  isLoggedIn() {
+    return localStorage.getItem('token')!=null;
+  }
+
+  GetToken() {
+    return localStorage.getItem('token')!=null?localStorage.getItem('token'):'';
+  }
+
+  Registration(inputdata:any) {
+    return this.http.post('https://localhost:44308/User/Register', inputdata);
+  }
+
 }
