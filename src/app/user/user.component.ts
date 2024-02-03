@@ -78,7 +78,7 @@ export class UserComponent implements OnInit {
 
     this.dialog.open(ModalpopupComponent, {
       width:'400px',
-      height:'400px',
+      // height:'400px',
       exitAnimationDuration:'1000ms',
       enterAnimationDuration:'1000ms',
       data:{

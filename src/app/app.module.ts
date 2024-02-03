@@ -8,7 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { StatusComponent } from './status/status.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './user/user.component';
@@ -35,7 +35,8 @@ import { ModalpopupComponent } from './modalpopup/modalpopup.component';
         FormsModule,
         BrowserAnimationsModule,
         HttpClientModule,
-        MaterialModule
+        MaterialModule,
+        ReactiveFormsModule
         // AccessRoutingModule
     ]
 })
