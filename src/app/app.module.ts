@@ -11,6 +11,8 @@ import { AddContactComponent } from './add-contact/add-contact.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
+import { UserComponent } from './user/user.component';
+import { MaterialModule } from 'src/Material-Module';
 
 @NgModule({
     declarations: [
@@ -19,7 +21,8 @@ import {HttpClientModule} from '@angular/common/http';
         AboutComponent,
         ContactComponent,
         StatusComponent,
-        AddContactComponent
+        AddContactComponent,
+        UserComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -28,7 +31,8 @@ import {HttpClientModule} from '@angular/common/http';
         AppRoutingModule,
         FormsModule,
         BrowserAnimationsModule,
-        HttpClientModule
+        HttpClientModule,
+        MaterialModule
         // AccessRoutingModule
     ]
 })
