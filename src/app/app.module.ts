@@ -10,9 +10,11 @@ import { StatusComponent } from './status/status.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {HttpClientModule} from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './user/user.component';
 import { MaterialModule } from 'src/Material-Module';
+import { TokenInterceptorService } from './Service/token-interceptor.service';
+import { ModalpopupComponent } from './modalpopup/modalpopup.component';
 
 @NgModule({
     declarations: [
@@ -22,9 +24,10 @@ import { MaterialModule } from 'src/Material-Module';
         ContactComponent,
         StatusComponent,
         AddContactComponent,
-        UserComponent
+        UserComponent,
+        ModalpopupComponent
     ],
-    providers: [],
+    providers: [{ provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true }],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
